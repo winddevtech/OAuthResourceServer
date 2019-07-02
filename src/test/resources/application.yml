@@ -1,0 +1,23 @@
+server:
+  port: 9002
+
+spring:
+  datasource:
+    url: 
+    username: 
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    sql-script-encoding: UTF-8
+  thymeleaf:
+    cache: false
+  jpa:
+    open-in-view: false
+
+oauth2:
+  provider:
+    introspection-enable: true
+    endpoint:
+      introspection: http://localhost:9001/introspect
+  resource:
+    resource-id: protected-resource-1
+    resource-secret: protected-resource-secret-1
