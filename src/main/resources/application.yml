@@ -17,7 +17,7 @@ oauth2:
   provider:
     introspection-enable: true
     endpoint:
-      introspection: http://localhost:9001/introspect
+      introspection: https://oauth-p.herokuapp.com/introspect
   resource:
     resource-id: protected-resource-1
     resource-secret: protected-resource-secret-1
